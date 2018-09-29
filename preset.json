@@ -1,0 +1,18 @@
+{
+  "useTaobaoRegistry": true,
+  "presets": {
+    "vueCli_3_ChanAn": {
+      "useConfigFiles": false,
+      "plugins": {
+        "@vue/cli-plugin-babel": {},
+        "@vue/cli-plugin-eslint": {
+          "config": "standard",
+          "lintOn": ["save"]
+        }
+      },
+      "router": true,
+      "routerHistoryMode": false,
+      "vuex": true
+    }
+  }
+}
