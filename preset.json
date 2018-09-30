@@ -21,7 +21,7 @@
       "configureWebpack": {},
       "devServer": {
         "host": "localhost",
-        "port": 2019,
+        "port": 8080,
         "hot": true,
         "hotOnly": false,
         "open": true,
