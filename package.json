@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    // https://github.com/vuejs/vue-cli/issues/2429
     "serve": "vue-cli-service serve --copy",
     "build:test": "vue-cli-service build --modern --report --mode testing",
     "build": "vue-cli-service build --modern --report",
