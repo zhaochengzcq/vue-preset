@@ -35,4 +35,13 @@ module.exports = (api, options, rootOptions) => {
       semver: "^5.5.1"
     }
   });
+
+  api.render({
+    "./.env.development": "./config/_env.development",
+    "./.env.production": "./config/_env.production",
+    "./.env.test": "./config/_env.test",
+    "./src/assets/js/functionality.js": "./config/js/functionality.js",
+    "./src/assets/js/register.js": "./config/js/register.js",
+    "./src/assets/js/validateRules.js": "./config/js/validateRules.js"
+  });
 };
