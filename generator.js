@@ -36,5 +36,5 @@ module.exports = (api, options, rootOptions) => {
     }
   });
   api.render("./template/default");
-  api.render({ "./src/assets": "./src/assets" });
+  api.render("./template/src/assets");
 };
