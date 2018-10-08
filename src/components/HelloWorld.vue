@@ -32,6 +32,16 @@
 </template>
 
 <script>
+import {
+  format,
+  getAgeByBirthday,
+  getInfoFormIdNo,
+  checkAge,
+  compressImg
+} from "../assets/js/functionality.js";
+import { validateRules } from "../assets/js/validateRules.js";
+import {} from "../assets/js/"
+import { isRegister } from "../assets/js/register.js";
 export default {
   name: 'HelloWorld',
   props: {
@@ -42,17 +52,21 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="stylus">
-h3
-  margin 40px 0 0
+h3 {
+  margin: 40px 0 0;
+}
 
-ul
-  list-style-type none
-  padding 0
+ul {
+  list-style-type: none;
+  padding: 0;
+}
 
-li
-  display inline-block
-  margin 0 10px
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
 
-a
-  color #42b983
+a {
+  color: #42b983;
+}
 </style>
