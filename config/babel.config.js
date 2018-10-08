@@ -1,8 +1,7 @@
 module.exports = {
-  presets: ['@vue/app'],
+  presets: ["@vue/app"],
   plugins: [
-    'transform-vue-jsx',
-    'transform-runtime',
-    ['import', { libraryName: 'vant', style: true }]
+    "transform-vue-jsx",
+    ["import", { libraryName: "vant", style: true }]
   ]
-}
+};
