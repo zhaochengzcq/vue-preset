@@ -28,7 +28,7 @@ function format(format) {
     if (new RegExp("(" + k + ")").test(format)) {
       format = format.replace(
         RegExp.$1,
-        RegExp.$1.length == 1
+        RegExp.$1.length === 1
           ? date[k]
           : ("00" + date[k]).substr(("" + date[k]).length)
       );
@@ -68,19 +68,20 @@ function getInfoFormIdNo(idNo, afferentDate) {
 
   //获取年龄
   var reg = /^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$/;
+  var myDate = null;
   if (reg.test(afferentDate)) {
-    var myDate = new Date(afferentDate);
+    myDate = new Date(afferentDate);
   } else {
-    var myDate = new Date();
+    myDate = new Date();
   }
   // var myDate = new Date(Date.now()+60*60*24*1000*30)
-
+  //getMounth(),getDate(),getFullYear()返回结果为数字；
   var month = myDate.getMonth() + 1;
   var day = myDate.getDate();
   var age = myDate.getFullYear() - idNo.substring(6, 10) - 1; //getFullYear()返回一个表示年份的 4 位数字
   if (
-    idNo.substring(10, 12) < month ||
-    (idNo.substring(10, 12) == month && idNo.substring(12, 14) <= day)
+    +idNo.substring(10, 12) < month ||
+    (+idNo.substring(10, 12) === month && +idNo.substring(12, 14) <= day)
   ) {
     age++;
   }
@@ -96,18 +97,19 @@ function getInfoFormIdNo(idNo, afferentDate) {
 function getAgeByBirthday(birthDay, afferentDate) {
   var reg = /^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$/;
   var birth = birthDay;
+  var nowDate = null;
   if (reg.test(afferentDate)) {
-    var nowDate = new Date(afferentDate);
+    nowDate = new Date(afferentDate);
   } else {
-    var nowDate = new Date();
+    nowDate = new Date();
   }
   // alert(date+'/'+nowDate)
   var month = nowDate.getMonth() + 1;
   var day = nowDate.getDate();
   var age = nowDate.getFullYear() - birth.substring(0, 4) - 1; //getFullYear()返回一个表示年份的 4 位数字
   if (
-    birth.substring(5, 7) < month ||
-    (birth.substring(5, 7) == month && birth.substring(8) <= day)
+    +birth.substring(5, 7) < month ||
+    (+birth.substring(5, 7) === month && +birth.substring(8) <= day)
   ) {
     age++;
   }
@@ -153,13 +155,13 @@ function checkAge(changeFlg, idNo, tbDate) {
       }
     }
   }
-
+  var age = null;
   if (changeFlg) {
-    var age = getInfoFormIdNo(idNo, tbDate).age;
+    age = getInfoFormIdNo(idNo, tbDate).age;
     checkMethod(age);
     return returnInfo;
   } else {
-    var age = getAgeByBirthday(idNo, tbDate);
+    age = getAgeByBirthday(idNo, tbDate);
     checkMethod(age);
     return returnInfo;
   }
@@ -169,7 +171,7 @@ function getCookie(name) {
   var cookieArr = document.cookie.split("; ");
   for (var i = 0; i < cookieArr.length; i++) {
     var arr = cookieArr[i].split("=");
-    if (arr[0] == name) {
+    if (arr[0] === name) {
       return unescape(arr[1]);
     }
   }

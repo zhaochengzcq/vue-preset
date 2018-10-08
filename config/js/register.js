@@ -44,6 +44,8 @@ function isRegister(that) {
       var strArr = response.data.split("&");
       // 将获取的字符串处理成对象
       var registerObj = {};
+      //跳转链接
+      var href = null;
       for (var a in strArr) {
         var temp = strArr[a].split("=");
         // console.log(temp[0]);
@@ -84,7 +86,7 @@ function isRegister(that) {
         registerObj.phoneNo === "" ||
         registerObj.phoneNo === undefined
       ) {
-        var href =
+        href =
           "http://weixincs.capli.com.cn/wxTerminal/binding/prepareRegist.do?" +
           "shareId=" +
           (registerObj.shareId ? registerObj.shareId : null);
@@ -95,7 +97,7 @@ function isRegister(that) {
         registerObj.roleType !== "C" &&
         registerObj.roleType !== "N"
       ) {
-        var href =
+        href =
           "http://weixincs.capli.com.cn/wxTerminal/binding/prepareRegist.do?" +
           "shareId=" +
           (registerObj.shareId ? registerObj.shareId : null);

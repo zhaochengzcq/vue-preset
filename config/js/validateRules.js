@@ -53,7 +53,7 @@ function IdentityCodeValid(idCardNo) {
     pass = false;
   } else {
     //18位身份证需要验证最后一位校验位
-    if (code.length == 18) {
+    if (code.length === 18) {
       code = code.split("");
       //∑(ai×Wi)(mod 11)
       //加权因子
@@ -68,7 +68,7 @@ function IdentityCodeValid(idCardNo) {
         wi = factor[i];
         sum += ai * wi;
       }
-      var last = parity[sum % 11];
+      // var last = parity[sum % 11];
       if (parity[sum % 11] != code[17]) {
         // this.$toast('请检查证件号码');
         pass = false;
