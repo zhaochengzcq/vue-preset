@@ -35,6 +35,6 @@ module.exports = (api, options, rootOptions) => {
       semver: "^5.5.1"
     }
   });
-  api.render("./src");
+  api.render("./template");
   // api.render("./template/src/assets");
 };
