@@ -49,6 +49,7 @@ module.exports = (api, options, rootOptions) => {
 
   api.render({
     "./.browserslistrc": "./config/_browserslistrc",
+    "./babel.config.js": "./config/babel.config.js",
     "./.env.development": "./config/_env.development",
     "./.env.production": "./config/_env.production",
     "./.env.test": "./config/_env.test",
