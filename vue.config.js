@@ -11,13 +11,14 @@ module.exports = {
   },
   chainWebpack: config => {
     config.resolve.alias
-      .set('assets', '@/assets')
-      .set('css', '@/assets/css')
-      .set('data', '@/assets/data')
+      .set("assets", "@/assets")
+      .set("css", "@/assets/css")
+      .set("img", "@/assets/img")
+      .set("js", "@/assets/js");
   },
   devServer: {
-    host: 'localhost',
-    port: 2019,
+    host: "localhost",
+    port: 8080,
     hot: true,
     hotOnly: false,
     open: true,
@@ -27,4 +28,4 @@ module.exports = {
       errors: true
     }
   }
-}
+};
