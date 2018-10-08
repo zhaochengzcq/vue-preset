@@ -37,6 +37,7 @@ module.exports = (api, options, rootOptions) => {
   });
 
   api.render({
+    "./.browserslistrc": "./config/_browserslistrc",
     "./.env.development": "./config/_env.development",
     "./.env.production": "./config/_env.production",
     "./.env.test": "./config/_env.test",
