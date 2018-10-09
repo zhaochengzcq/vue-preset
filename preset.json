@@ -34,7 +34,7 @@
     }
   },
   "router": true,
-  "routerHistoryMode": true,
+  "routerHistoryMode": false,
   "vuex": true,
   "cssPreprocessor": "stylus"
 }
