@@ -1,8 +1,8 @@
 module.exports = {
   // 基本路径
-  baseUrl: './',
+  baseUrl: "./",
   // 输出文件目录
-  outputDir: 'dist',
+  outputDir: "dist",
   // eslint-loader 是否在保存的时候检查
   lintOnSave: true,
   // use the full build with in-browser compiler?
@@ -46,27 +46,26 @@ module.exports = {
   // 生产环境是否生成 sourceMap 文件
   productionSourceMap: false,
   transpileDependencies: [],
-  configureWebpack: {},
   // webpack-dev-server 相关配置
   devServer: {
-    host: 'localhost',
+    host: "localhost",
     port: 8080,
     hot: true,
     hotOnly: false,
     open: true,
     https: false,
     proxy: {
-      '/api': {
+      "/api": {
         // target: "http://100.112.45.189:8008", //内网开发
         // target: "http://wxcarcs.capli.com.cn:8008", //外网开发
         // target: "localhost:8082"
-        target: 'http://100.112.45.189:8008',
+        target: "http://100.112.45.189:8008",
         changeOrigin: true, // 改变源
         pathRewrite: {
           // "^/api": "http://100.112.45.189:8008" //路径重写 内网开发
           // "^/api": "http://wxcarcs.capli.com.cn:8008" //路径重写 外网开发
           // "^/api": "localhost:8082"
-          '^/api': 'http://100.112.45.189:8008'
+          "^/api": "http://100.112.45.189:8008"
         }
       }
     }, // 设置代理
@@ -75,4 +74,4 @@ module.exports = {
       errors: true
     }
   }
-}
+};
