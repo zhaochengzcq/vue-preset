@@ -56,6 +56,7 @@ module.exports = (api, options, rootOptions) => {
     "./src/assets/js/functionality.js": "./config/js/functionality.js",
     "./src/assets/js/register.js": "./config/js/register.js",
     "./src/assets/js/validateRules.js": "./config/js/validateRules.js",
-    "./vue.config.js": "./config/vue.config.js"
+    "./vue.config.js": "./config/vue.config.js",
+    "./README.md": "./config/README.md"
   });
 };
