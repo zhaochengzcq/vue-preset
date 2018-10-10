@@ -18,6 +18,7 @@ module.exports = (api, options, rootOptions) => {
     },
     devDependencies: {
       autoprefixer: '^7.1.2',
+      'babel-eslint': '^10.0.1',
       'babel-loader': '^8.0.4',
       'babel-plugin-import': '^1.9.1',
       'babel-plugin-transform-vue-jsx': '^3.5.0',
