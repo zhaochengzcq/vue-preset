@@ -17,14 +17,14 @@ module.exports = (api, options, rootOptions) => {
       vconsole: '^3.2.0'
     },
     devDependencies: {
-      autoprefixer: '^7.1.2',
+      autoprefixer: '^9.1.5',
       'babel-eslint': '^10.0.1',
       'babel-loader': '^8.0.4',
       'babel-plugin-import': '^1.9.1',
       'babel-plugin-transform-vue-jsx': '^3.5.0',
       'babel-plugin-syntax-jsx': '^6.18.0',
       'css-loader': '^0.28.0',
-      chalk: '^2.0.1',
+      chalk: '^2.4.1',
       eslint: '^5.6.1',
       'eslint-loader': '^2.1.1',
       'eslint-plugin-import': '^2.7.0',
@@ -43,7 +43,7 @@ module.exports = (api, options, rootOptions) => {
       'postcss-px-to-viewport': '0.0.3',
       'url-loader': '^1.1.1',
       'vue-loader': '^15.4.2',
-      'vue-style-loader': '^3.0.1',
+      'vue-style-loader': '^4.1.2',
       'vue-template-compiler': '^2.5.2',
       rimraf: '^2.6.0',
       semver: '^5.5.1'
