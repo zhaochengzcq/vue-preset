@@ -57,6 +57,7 @@ module.exports = (api, options, rootOptions) => {
     './.env.production': './config/_env.production',
     './.env.test': './config/_env.test',
     './.eslintrc.js': './config/_eslintrc.js',
+    './public/index.html': './config/index.html',
     './src/assets/js/functionality.js': './config/js/functionality.js',
     './src/assets/js/register.js': './config/js/register.js',
     './src/assets/js/validateRules.js': './config/js/validateRules.js',
