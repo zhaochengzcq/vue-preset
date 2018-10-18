@@ -13,4 +13,8 @@ npm run build
 
 ## Version iteration record
 
+> ### v_1.0.1
+
+    bug 修复
+
 > ### v_1.0.0
