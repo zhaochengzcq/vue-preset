@@ -27,7 +27,7 @@ module.exports = (api, options, rootOptions) => {
       'css-loader': '^1.0.0',
       chalk: '^2.4.1',
       'date-fns': '^1.29.0',
-      eslint: '^5.6.1',
+      eslint: '^5.8.0',
       'eslint-loader': '^2.1.1',
       'eslint-plugin-import': '^2.7.0',
       'eslint-plugin-node': '^7.0.0',
@@ -35,7 +35,7 @@ module.exports = (api, options, rootOptions) => {
       'eslint-plugin-standard': '^4.0.0',
       'eslint-config-standard': '^12.0.0',
       'eslint-plugin-html': '^4.0.6',
-      'eslint-plugin-vue': '^4.7.1',
+      'eslint-plugin-vue': '^5.0.0-0',
       ora: '^3.0.0',
       'postcss-cssnext': '^3.1.0',
       'postcss-import': '^11.0.0',
@@ -46,7 +46,7 @@ module.exports = (api, options, rootOptions) => {
       'url-loader': '^1.1.1',
       'vue-loader': '^15.4.2',
       'vue-style-loader': '^4.1.2',
-      'vue-template-compiler': '^2.5.2',
+      'vue-template-compiler': '^2.5.17',
       rimraf: '^2.6.0',
       semver: '^5.5.1'
     }
