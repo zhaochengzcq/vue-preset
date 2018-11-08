@@ -79,7 +79,7 @@ function IdentityCodeValid (idCardNo) {
 }
 // 检查手机号格式
 function checkMobile (phoneNo) {
-  var regPhone = /^[1][345678]\d{9}$/
+  var regPhone = /^[1][3456789]\d{9}$/
   var pass = true
   if (!regPhone.test(phoneNo)) {
     pass = false
@@ -106,7 +106,8 @@ function checkEmail (email) {
  * @param {string} passport
  */
 function checkPassport (passport) {
-  var reg = /^1[45]\d{7}$|^[EK]\d{8}$|^(EA|EB|EC|ED|DE|SE|PE|MA)\d{7}$|^[GDSPHM]\d{8}$/
+  // var reg = /^1[45]\d{7}$|^[EK]\d{8}$|^(EA|EB|EC|ED|DE|SE|PE|MA)\d{7}$|^[GDSPHM]\d{8}$/
+  var reg = /^[A-Za-z0-9]+$/
   var flag = true
   if (!reg.test(passport)) {
     flag = false
@@ -129,6 +130,23 @@ function checkMilitaryOfficerIdCard (MilitaryOfficerIdCard) {
     return flag
   }
 }
+/**
+ *检查驾驶证证格式是否正确
+ * @param {String} driverLicense 驾驶证号
+ */
+function checkDriverLicense (driverLicense) {
+  if (driverLicense.length === 18) {
+    return IdentityCodeValid(driverLicense)
+  } else if (driverLicense.length === 15) {
+    return true
+  } else {
+    return false
+  }
+}
+/**
+ *
+ * @param {*} value
+ */
 function others (value) {
   if (value === null || value === undefined || value === '') {
     return false
@@ -159,12 +177,15 @@ function checkCarNo (carNo) {
  *                                 M--军官证
  *                                 PM--手机号
  *                                 EM--邮箱
+ *                                 D -- 驾驶证
  *                                 O -- 其他
  *                                 carNo -- 车牌号
  * @param {string} value 校验值
  */
 function validateRules (type, value) {
   switch (type) {
+    case 'D':
+      return checkDriverLicense(value)
     case 'I':
       return IdentityCodeValid(value)
     case 'P':
