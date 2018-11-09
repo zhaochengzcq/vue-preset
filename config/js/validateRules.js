@@ -138,7 +138,14 @@ function checkDriverLicense (driverLicense) {
   if (driverLicense.length === 18) {
     return IdentityCodeValid(driverLicense)
   } else if (driverLicense.length === 15) {
-    return true
+    let driverLicenseReg15 = /^\d{15}$/
+    var flag = true
+    if (!driverLicenseReg15.test(driverLicense)) {
+      flag = false
+      return flag
+    } else {
+      return flag
+    }
   } else {
     return false
   }
