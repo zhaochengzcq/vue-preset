@@ -106,8 +106,8 @@ function checkEmail (email) {
  * @param {string} passport
  */
 function checkPassport (passport) {
-  // var reg = /^1[45]\d{7}$|^[EK]\d{8}$|^(EA|EB|EC|ED|DE|SE|PE|MA)\d{7}$|^[GDSPHM]\d{8}$/
-  var reg = /^[A-Za-z0-9]+$/
+  var reg = /^1[45]\d{7}$|^[EK]\d{8}$|^(EA|EB|EC|ED|DE|SE|PE|MA)\d{7}$|^[GDSPHM]\d{8}$/
+  // var reg = /^[A-Za-z0-9]+$/
   var flag = true
   if (!reg.test(passport)) {
     flag = false
