@@ -13,9 +13,13 @@ npm run build
 
 ## Version iteration record
 
+> ###v_1.0.4
+>
+>
+> ​functionality.js添加新功能 proMath
+
 > ###v_1.0.3
 >
-> 升级 vue-cli 至 3.1.1
 >
 > ​升级插件版本
 >  'vue-template-compiler' => '^2.5.17',
@@ -27,7 +31,6 @@ npm run build
 
 > ###v_1.0.2
 >
-> 升级 vue-cli 至 3.0.5
 >
 > 升级插件版本
 > ​ "autoprefixer": "^9.3.0",
