@@ -13,7 +13,7 @@ module.exports = (api, options, rootOptions) => {
       'vue-router': '^3.0.1',
       vconsole: '^3.2.0',
       'vue-axios': '^2.1.3',
-      vant: '^1.3.3',
+      vant: '^1.4.7',
       vconsole: '^3.2.0'
     },
     devDependencies: {
