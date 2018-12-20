@@ -11,13 +11,11 @@ module.exports = (api, options, rootOptions) => {
       axios: '^0.18.0',
       vuex: '^3.0.1',
       'vue-router': '^3.0.1',
-      vconsole: '^3.2.0',
       'vue-axios': '^2.1.3',
-      vant: '^1.4.7',
-      vconsole: '^3.2.0'
+      vant: '^1.4.7'
     },
     devDependencies: {
-      autoprefixer: '^9.3.0',
+      autoprefixer: '^9.4.0',
       '@babel/core': '^7.1.2',
       'babel-eslint': '^10.0.1',
       'babel-loader': '^8.0.4',
@@ -47,6 +45,7 @@ module.exports = (api, options, rootOptions) => {
       'vue-loader': '^15.4.2',
       'vue-style-loader': '^4.1.2',
       'vue-template-compiler': '^2.5.17',
+      vconsole: '^3.2.0',
       rimraf: '^2.6.0',
       semver: '^5.5.1'
     }
