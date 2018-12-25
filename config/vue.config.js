@@ -56,16 +56,10 @@ module.exports = {
     https: false,
     proxy: {
       "/api": {
-        // target: "http://100.112.45.189:8008", //内网开发
-        // target: "http://wxcarcs.capli.com.cn:8008", //外网开发
-        // target: "localhost:8082"
-        target: "http://100.112.45.189:8008",
+        target: "",
         changeOrigin: true, // 改变源
         pathRewrite: {
-          // "^/api": "http://100.112.45.189:8008" //路径重写 内网开发
-          // "^/api": "http://wxcarcs.capli.com.cn:8008" //路径重写 外网开发
-          // "^/api": "localhost:8082"
-          "^/api": "http://100.112.45.189:8008"
+          "^/api": ""
         }
       }
     }, // 设置代理
