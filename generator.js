@@ -39,7 +39,6 @@ module.exports = (api, options, rootOptions) => {
       'postcss-import': '^11.0.0',
       'postcss-loader': '^2.0.8',
       'postcss-url': '^7.2.1',
-      'postcss-px-to-viewport': '0.0.3',
       'url-loader': '^1.1.1',
       'vue-loader': '^15.4.2',
       'vue-style-loader': '^4.1.2',
