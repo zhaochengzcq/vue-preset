@@ -54,15 +54,15 @@ module.exports = {
     hotOnly: false,
     open: true,
     https: false,
-    proxy: {
-      "/api": {
-        target: "",
-        changeOrigin: true, // 改变源
-        pathRewrite: {
-          "^/api": ""
-        }
-      }
-    }, // 设置代理
+    // proxy: {
+    //   "/api": {
+    //     target: "",
+    //     changeOrigin: true, // 改变源
+    //     pathRewrite: {
+    //       "^/api": ""
+    //     }
+    //   }
+    // }, // 设置代理
     overlay: {
       warnings: false,
       errors: true
