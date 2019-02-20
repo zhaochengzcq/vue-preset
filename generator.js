@@ -12,7 +12,7 @@ module.exports = (api, options, rootOptions) => {
       vuex: '^3.0.1',
       'vue-router': '^3.0.1',
       'vue-axios': '^2.1.3',
-      vant: '^1.4.7'
+      vant: '^1.6.2'
     },
     devDependencies: {
       autoprefixer: '^9.4.0',
