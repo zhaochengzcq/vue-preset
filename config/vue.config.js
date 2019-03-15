@@ -1,8 +1,8 @@
 module.exports = {
   // 基本路径
-  baseUrl: "./",
+  publicPath: './',
   // 输出文件目录
-  outputDir: "dist",
+  outputDir: 'dist',
   // eslint-loader 是否在保存的时候检查
   lintOnSave: true,
   // use the full build with in-browser compiler?
@@ -48,7 +48,7 @@ module.exports = {
   transpileDependencies: [],
   // webpack-dev-server 相关配置
   devServer: {
-    host: "localhost",
+    host: 'localhost',
     port: 8080,
     hot: true,
     hotOnly: false,
@@ -68,4 +68,4 @@ module.exports = {
       errors: true
     }
   }
-};
+}
